@@ -1,0 +1,420 @@
+{
+  "starlink": {
+    "payload_orbit": "LEO-600",
+    "passes": {
+      "overhead": {
+        "sat": "STARLINK-37332",
+        "max_el_deg": 89.9,
+        "links": {
+          "set1 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": 2.94,
+              "max": 13.89
+            },
+            "cn0_dbhz": {
+              "min": 77.71,
+              "max": 88.66
+            },
+            "swing_db": 10.95
+          },
+          "set1 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -0.9,
+              "max": 10.05
+            },
+            "cn0_dbhz": {
+              "min": 54.66,
+              "max": 65.62
+            },
+            "swing_db": 10.95
+          },
+          "set1 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 3.41,
+              "max": 16.32
+            },
+            "cn0_dbhz": {
+              "min": 89.43,
+              "max": 102.34
+            },
+            "swing_db": 12.91
+          },
+          "set1 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 13.22,
+              "max": 26.06
+            },
+            "cn0_dbhz": {
+              "min": 99.24,
+              "max": 112.08
+            },
+            "swing_db": 12.84
+          },
+          "set2 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": -3.06,
+              "max": 7.89
+            },
+            "cn0_dbhz": {
+              "min": 71.71,
+              "max": 82.66
+            },
+            "swing_db": 10.95
+          },
+          "set2 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -6.9,
+              "max": 4.05
+            },
+            "cn0_dbhz": {
+              "min": 48.66,
+              "max": 59.62
+            },
+            "swing_db": 10.95
+          },
+          "set2 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -4.59,
+              "max": 8.32
+            },
+            "cn0_dbhz": {
+              "min": 81.43,
+              "max": 94.34
+            },
+            "swing_db": 12.91
+          },
+          "set2 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 5.22,
+              "max": 18.06
+            },
+            "cn0_dbhz": {
+              "min": 91.24,
+              "max": 104.08
+            },
+            "swing_db": 12.84
+          }
+        }
+      },
+      "low": {
+        "sat": "STARLINK-37091",
+        "max_el_deg": 30.0,
+        "links": {
+          "set1 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": 2.93,
+              "max": 8.6
+            },
+            "cn0_dbhz": {
+              "min": 77.71,
+              "max": 83.37
+            },
+            "swing_db": 5.66
+          },
+          "set1 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -0.9,
+              "max": 4.76
+            },
+            "cn0_dbhz": {
+              "min": 54.66,
+              "max": 60.32
+            },
+            "swing_db": 5.66
+          },
+          "set1 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 3.4,
+              "max": 10.63
+            },
+            "cn0_dbhz": {
+              "min": 89.42,
+              "max": 96.65
+            },
+            "swing_db": 7.23
+          },
+          "set1 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 13.22,
+              "max": 20.39
+            },
+            "cn0_dbhz": {
+              "min": 99.24,
+              "max": 106.41
+            },
+            "swing_db": 7.17
+          },
+          "set2 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": -3.07,
+              "max": 2.6
+            },
+            "cn0_dbhz": {
+              "min": 71.71,
+              "max": 77.37
+            },
+            "swing_db": 5.66
+          },
+          "set2 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -6.9,
+              "max": -1.24
+            },
+            "cn0_dbhz": {
+              "min": 48.66,
+              "max": 54.32
+            },
+            "swing_db": 5.66
+          },
+          "set2 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -4.6,
+              "max": 2.63
+            },
+            "cn0_dbhz": {
+              "min": 81.42,
+              "max": 88.65
+            },
+            "swing_db": 7.23
+          },
+          "set2 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 5.22,
+              "max": 12.39
+            },
+            "cn0_dbhz": {
+              "min": 91.24,
+              "max": 98.41
+            },
+            "swing_db": 7.17
+          }
+        }
+      }
+    }
+  },
+  "oneweb": {
+    "payload_orbit": "LEO-1200",
+    "passes": {
+      "overhead": {
+        "sat": "ONEWEB-0113",
+        "max_el_deg": 89.9,
+        "links": {
+          "set1 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": 3.11,
+              "max": 11.59
+            },
+            "cn0_dbhz": {
+              "min": 77.88,
+              "max": 86.36
+            },
+            "swing_db": 8.48
+          },
+          "set1 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -6.73,
+              "max": 1.75
+            },
+            "cn0_dbhz": {
+              "min": 48.83,
+              "max": 57.31
+            },
+            "swing_db": 8.48
+          },
+          "set1 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 3.58,
+              "max": 14.01
+            },
+            "cn0_dbhz": {
+              "min": 89.6,
+              "max": 100.03
+            },
+            "swing_db": 10.44
+          },
+          "set1 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 7.39,
+              "max": 17.76
+            },
+            "cn0_dbhz": {
+              "min": 93.41,
+              "max": 103.78
+            },
+            "swing_db": 10.37
+          },
+          "set2 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": -2.89,
+              "max": 5.59
+            },
+            "cn0_dbhz": {
+              "min": 71.88,
+              "max": 80.36
+            },
+            "swing_db": 8.48
+          },
+          "set2 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -12.73,
+              "max": -4.25
+            },
+            "cn0_dbhz": {
+              "min": 42.83,
+              "max": 51.31
+            },
+            "swing_db": 8.48
+          },
+          "set2 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -4.42,
+              "max": 6.01
+            },
+            "cn0_dbhz": {
+              "min": 81.6,
+              "max": 92.03
+            },
+            "swing_db": 10.44
+          },
+          "set2 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -0.61,
+              "max": 9.76
+            },
+            "cn0_dbhz": {
+              "min": 85.41,
+              "max": 95.78
+            },
+            "swing_db": 10.37
+          }
+        }
+      },
+      "low": {
+        "sat": "ONEWEB-0324",
+        "max_el_deg": 30.0,
+        "links": {
+          "set1 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": 3.2,
+              "max": 7.24
+            },
+            "cn0_dbhz": {
+              "min": 77.97,
+              "max": 82.02
+            },
+            "swing_db": 4.04
+          },
+          "set1 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -6.64,
+              "max": -2.59
+            },
+            "cn0_dbhz": {
+              "min": 48.93,
+              "max": 52.97
+            },
+            "swing_db": 4.04
+          },
+          "set1 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 3.67,
+              "max": 9.28
+            },
+            "cn0_dbhz": {
+              "min": 89.69,
+              "max": 95.3
+            },
+            "swing_db": 5.6
+          },
+          "set1 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": 7.49,
+              "max": 13.04
+            },
+            "cn0_dbhz": {
+              "min": 93.51,
+              "max": 99.06
+            },
+            "swing_db": 5.55
+          },
+          "set2 S DL": {
+            "bandwidth_mhz": 30.0,
+            "cnr_db": {
+              "min": -2.8,
+              "max": 1.24
+            },
+            "cn0_dbhz": {
+              "min": 71.97,
+              "max": 76.02
+            },
+            "swing_db": 4.04
+          },
+          "set2 S UL": {
+            "bandwidth_mhz": 0.36,
+            "cnr_db": {
+              "min": -12.64,
+              "max": -8.59
+            },
+            "cn0_dbhz": {
+              "min": 42.93,
+              "max": 46.97
+            },
+            "swing_db": 4.04
+          },
+          "set2 Ka DL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -4.33,
+              "max": 1.28
+            },
+            "cn0_dbhz": {
+              "min": 81.69,
+              "max": 87.3
+            },
+            "swing_db": 5.6
+          },
+          "set2 Ka UL": {
+            "bandwidth_mhz": 400.0,
+            "cnr_db": {
+              "min": -0.51,
+              "max": 5.04
+            },
+            "cn0_dbhz": {
+              "min": 85.51,
+              "max": 91.06
+            },
+            "swing_db": 5.55
+          }
+        }
+      }
+    }
+  }
+}
