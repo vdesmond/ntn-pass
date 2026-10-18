@@ -1,0 +1,188 @@
+{
+  "site": {
+    "name": "Sophia Antipolis",
+    "lat_deg": 43.6145,
+    "lon_deg": 7.0715,
+    "alt_m": 130.0
+  },
+  "t0_utc": "2026-10-13T00:00:00+00:00",
+  "snapshot": "2026-10-13",
+  "mask_deg": 10.0,
+  "starlink": {
+    "satellites": 9728,
+    "window_h": 6.0,
+    "step_s": 10.0,
+    "passes": 11223,
+    "mean_pass_s": 371.1,
+    "in_view": {
+      "min": 165,
+      "mean": 196.47,
+      "max": 230
+    },
+    "serving": {
+      "max-elevation, hysteresis 0 deg, mask 10 deg": {
+        "handovers_per_hour": 178.0,
+        "median_dwell_s": 20.0,
+        "outage_fraction": 0.0
+      },
+      "max-elevation, hysteresis 5 deg, mask 10 deg": {
+        "handovers_per_hour": 143.5,
+        "median_dwell_s": 20.0,
+        "outage_fraction": 0.0
+      },
+      "until-mask, mask 10 deg": {
+        "handovers_per_hour": 15.67,
+        "median_dwell_s": 230.0,
+        "outage_fraction": 0.0
+      }
+    },
+    "highest_pass": {
+      "sat": "STARLINK-37332",
+      "aos_utc": "2026-10-13T04:20:12.231445+00:00",
+      "duration_s": 436.3,
+      "max_el_deg": 89.94,
+      "delay_ms": [
+        1.556,
+        5.39
+      ],
+      "max_doppler_ppm": 22.475,
+      "max_doppler_khz_s_band": 44.95,
+      "max_doppler_khz_ka": 449.5,
+      "max_doppler_rate_ppm_s": 0.3591,
+      "max_delay_drift_us_s": 22.475
+    },
+    "lowest_pass": {
+      "sat": "STARLINK-3339",
+      "aos_utc": "2026-10-13T01:48:01.831055+00:00",
+      "duration_s": 259.2,
+      "max_el_deg": 15.0,
+      "delay_ms": [
+        4.491,
+        5.442
+      ],
+      "max_doppler_ppm": 13.298,
+      "max_doppler_khz_s_band": 26.6,
+      "max_doppler_khz_ka": 266.0,
+      "max_doppler_rate_ppm_s": 0.1239,
+      "max_delay_drift_us_s": 13.298
+    }
+  },
+  "oneweb": {
+    "satellites": 648,
+    "window_h": 24.0,
+    "step_s": 20.0,
+    "passes": 3218,
+    "mean_pass_s": 690.0,
+    "in_view": {
+      "min": 20,
+      "mean": 25.98,
+      "max": 36
+    },
+    "serving": {
+      "max-elevation, hysteresis 0 deg, mask 10 deg": {
+        "handovers_per_hour": 31.46,
+        "median_dwell_s": 140.0,
+        "outage_fraction": 0.0
+      },
+      "max-elevation, hysteresis 5 deg, mask 10 deg": {
+        "handovers_per_hour": 29.08,
+        "median_dwell_s": 140.0,
+        "outage_fraction": 0.0
+      },
+      "until-mask, mask 10 deg": {
+        "handovers_per_hour": 8.25,
+        "median_dwell_s": 440.0,
+        "outage_fraction": 0.0
+      }
+    },
+    "highest_pass": {
+      "sat": "ONEWEB-0113",
+      "aos_utc": "2026-10-13T17:49:11.762695+00:00",
+      "duration_s": 884.3,
+      "max_el_deg": 89.89,
+      "delay_ms": [
+        4.048,
+        10.55
+      ],
+      "max_doppler_ppm": 19.995,
+      "max_doppler_khz_s_band": 39.99,
+      "max_doppler_khz_ka": 399.9,
+      "max_doppler_rate_ppm_s": 0.1211,
+      "max_delay_drift_us_s": 19.995
+    },
+    "lowest_pass": {
+      "sat": "ONEWEB-0188",
+      "aos_utc": "2026-10-13T13:55:59.721680+00:00",
+      "duration_s": 454.7,
+      "max_el_deg": 15.03,
+      "delay_ms": [
+        9.278,
+        10.529
+      ],
+      "max_doppler_ppm": 10.293,
+      "max_doppler_khz_s_band": 20.59,
+      "max_doppler_khz_ka": 205.9,
+      "max_doppler_rate_ppm_s": 0.05153,
+      "max_delay_drift_us_s": 10.293
+    }
+  },
+  "galileo": {
+    "satellites": 30,
+    "window_h": 24.0,
+    "step_s": 60.0,
+    "passes": 30,
+    "mean_pass_s": 19293.3,
+    "in_view": {
+      "min": 6,
+      "mean": 8.49,
+      "max": 12
+    },
+    "serving": {
+      "max-elevation, hysteresis 0 deg, mask 10 deg": {
+        "handovers_per_hour": 0.46,
+        "median_dwell_s": 8430.0,
+        "outage_fraction": 0.0
+      },
+      "max-elevation, hysteresis 5 deg, mask 10 deg": {
+        "handovers_per_hour": 0.42,
+        "median_dwell_s": 9060.0,
+        "outage_fraction": 0.0
+      },
+      "until-mask, mask 10 deg": {
+        "handovers_per_hour": 0.21,
+        "median_dwell_s": 15120.0,
+        "outage_fraction": 0.0
+      }
+    },
+    "highest_pass": {
+      "sat": "GSAT0103 (GALILEO-FM3)",
+      "aos_utc": "2026-10-13T09:32:01.556396+00:00",
+      "duration_s": 27943.5,
+      "max_el_deg": 89.72,
+      "delay_ms": [
+        77.491,
+        92.788
+      ],
+      "max_doppler_ppm": 2.056,
+      "max_doppler_khz_s_band": 4.11,
+      "max_doppler_khz_ka": 41.1,
+      "max_doppler_rate_ppm_s": 0.0002437,
+      "max_delay_drift_us_s": 2.056
+    },
+    "lowest_pass": {
+      "sat": "GSAT0224 (GALILEO 28)",
+      "aos_utc": "2026-10-13T10:40:48.826904+00:00",
+      "duration_s": 8170.3,
+      "max_el_deg": 17.31,
+      "delay_ms": [
+        90.344,
+        92.87
+      ],
+      "max_doppler_ppm": 1.19,
+      "max_doppler_khz_s_band": 2.38,
+      "max_doppler_khz_ka": 23.8,
+      "max_doppler_rate_ppm_s": 0.0003153,
+      "max_delay_drift_us_s": 1.19
+    }
+  }
+}
