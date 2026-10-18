@@ -1,0 +1,51 @@
+{
+  "fetched_utc": "2026-10-13T21:25Z",
+  "source": "https://celestrak.org/NORAD/elements/gp.php?GROUP=<group>&FORMAT=tle",
+  "groups": {
+    "starlink": {
+      "file": "starlink-2026-10-13.tle",
+      "satellites": 10654,
+      "operational": 9728,
+      "epoch_min": "2026-09-21T05:49Z",
+      "epoch_max": "2026-10-13T18:04Z",
+      "filter": {
+        "alt_km": [
+          440.0,
+          600.0
+        ],
+        "max_ecc": 0.005,
+        "max_epoch_age_d": 3.0
+      }
+    },
+    "oneweb": {
+      "file": "oneweb-2026-10-13.tle",
+      "satellites": 651,
+      "operational": 648,
+      "epoch_min": "2026-10-11T04:04Z",
+      "epoch_max": "2026-10-13T15:23Z",
+      "filter": {
+        "alt_km": [
+          1100.0,
+          1300.0
+        ],
+        "max_ecc": 0.005,
+        "max_epoch_age_d": 3.0
+      }
+    },
+    "galileo": {
+      "file": "galileo-2026-10-13.tle",
+      "satellites": 32,
+      "operational": 30,
+      "epoch_min": "2026-09-15T07:12Z",
+      "epoch_max": "2026-10-13T11:49Z",
+      "filter": {
+        "alt_km": [
+          23000.0,
+          23400.0
+        ],
+        "max_ecc": 0.01,
+        "max_epoch_age_d": 30.0
+      }
+    }
+  }
+}
