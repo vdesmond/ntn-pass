@@ -1,0 +1,1500 @@
+{
+  "rel18": {
+    "sigma_rtt_ns_ts38133": 60.79,
+    "measurement_step_s": 10.0,
+    "pfa": 0.01,
+    "pd": 0.9,
+    "sweep": [
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 10.0,
+        "ts38133": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0071,
+            0.1703
+          ],
+          "min_detectable_km": {
+            "best": 0.031,
+            "worst": 0.572
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.5,
+            "noncentrality": 2.49,
+            "pd": 0.0877
+          }
+        },
+        "ssb_only": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0009,
+            0.0215
+          ],
+          "min_detectable_km": {
+            "best": 0.004,
+            "worst": 0.072
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.5,
+            "noncentrality": 2.49,
+            "pd": 0.0877
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0106,
+            0.2529
+          ],
+          "min_detectable_km": {
+            "best": 0.046,
+            "worst": 0.851
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.5,
+            "noncentrality": 2.49,
+            "pd": 0.0877
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 20.0,
+        "ts38133": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0058,
+            0.0853
+          ],
+          "min_detectable_km": {
+            "best": 0.027,
+            "worst": 0.356
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 49.29,
+            "pd": 0.9998
+          }
+        },
+        "ssb_only": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0007,
+            0.0108
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.045
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 2473.49,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0086,
+            0.1267
+          ],
+          "min_detectable_km": {
+            "best": 0.041,
+            "worst": 0.529
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 27.75,
+            "pd": 0.9663
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 30.0,
+        "ts38133": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.005,
+            0.0541
+          ],
+          "min_detectable_km": {
+            "best": 0.025,
+            "worst": 0.249
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 259.78,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0006,
+            0.0069
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.032
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 14665.77,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0075,
+            0.0803
+          ],
+          "min_detectable_km": {
+            "best": 0.037,
+            "worst": 0.37
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.4,
+            "noncentrality": 131.14,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 60.0,
+        "ts38133": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0038,
+            0.0232
+          ],
+          "min_detectable_km": {
+            "best": 0.021,
+            "worst": 0.123
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.2,
+            "noncentrality": 4963.35,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0005,
+            0.003
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.016
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.2,
+            "noncentrality": 294173.95,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0057,
+            0.0344
+          ],
+          "min_detectable_km": {
+            "best": 0.031,
+            "worst": 0.182
+          },
+          "mirror": {
+            "mirror_offset_km": 1678.2,
+            "noncentrality": 2321.5,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 120.0,
+        "ts38133": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0029,
+            0.0095
+          ],
+          "min_detectable_km": {
+            "best": 0.017,
+            "worst": 0.057
+          },
+          "mirror": {
+            "mirror_offset_km": 1677.4,
+            "noncentrality": 107544.32,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0004,
+            0.0013
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.008
+          },
+          "mirror": {
+            "mirror_offset_km": 1677.5,
+            "noncentrality": 6021622.16,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0043,
+            0.0141
+          ],
+          "min_detectable_km": {
+            "best": 0.026,
+            "worst": 0.085
+          },
+          "mirror": {
+            "mirror_offset_km": 1677.4,
+            "noncentrality": 49155.91,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 25.0,
+        "window_s": 240.0,
+        "ts38133": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0022,
+            0.004
+          ],
+          "min_detectable_km": {
+            "best": 0.015,
+            "worst": 0.028
+          },
+          "mirror": {
+            "mirror_offset_km": 1674.9,
+            "noncentrality": 2283341.38,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0003,
+            0.0006
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.004
+          },
+          "mirror": {
+            "mirror_offset_km": 1675.5,
+            "noncentrality": 101240403.88,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0033,
+            0.006
+          ],
+          "min_detectable_km": {
+            "best": 0.023,
+            "worst": 0.041
+          },
+          "mirror": {
+            "mirror_offset_km": 1674.9,
+            "noncentrality": 1037272.62,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 10.0,
+        "ts38133": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0091,
+            0.1178
+          ],
+          "min_detectable_km": {
+            "best": 0.04,
+            "worst": 0.517
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 2.19,
+            "pd": 0.0748
+          }
+        },
+        "ssb_only": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0008,
+            0.0102
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.045
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 2.19,
+            "pd": 0.0748
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0136,
+            0.1749
+          ],
+          "min_detectable_km": {
+            "best": 0.059,
+            "worst": 0.767
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 2.19,
+            "pd": 0.0748
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 20.0,
+        "ts38133": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0075,
+            0.0591
+          ],
+          "min_detectable_km": {
+            "best": 0.035,
+            "worst": 0.278
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 24.68,
+            "pd": 0.9385
+          }
+        },
+        "ssb_only": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0006,
+            0.0051
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.024
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 2171.59,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0111,
+            0.0878
+          ],
+          "min_detectable_km": {
+            "best": 0.052,
+            "worst": 0.412
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 15.88,
+            "pd": 0.7307
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 30.0,
+        "ts38133": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0065,
+            0.0376
+          ],
+          "min_detectable_km": {
+            "best": 0.032,
+            "worst": 0.185
+          },
+          "mirror": {
+            "mirror_offset_km": 870.0,
+            "noncentrality": 116.51,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0006,
+            0.0033
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.016
+          },
+          "mirror": {
+            "mirror_offset_km": 869.9,
+            "noncentrality": 12741.04,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0096,
+            0.0559
+          ],
+          "min_detectable_km": {
+            "best": 0.047,
+            "worst": 0.275
+          },
+          "mirror": {
+            "mirror_offset_km": 870.0,
+            "noncentrality": 64.25,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 60.0,
+        "ts38133": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.005,
+            0.0163
+          ],
+          "min_detectable_km": {
+            "best": 0.027,
+            "worst": 0.088
+          },
+          "mirror": {
+            "mirror_offset_km": 870.1,
+            "noncentrality": 2022.71,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0004,
+            0.0015
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.008
+          },
+          "mirror": {
+            "mirror_offset_km": 870.1,
+            "noncentrality": 243747.3,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0074,
+            0.0242
+          ],
+          "min_detectable_km": {
+            "best": 0.04,
+            "worst": 0.131
+          },
+          "mirror": {
+            "mirror_offset_km": 870.1,
+            "noncentrality": 973.95,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 120.0,
+        "ts38133": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0038,
+            0.0069
+          ],
+          "min_detectable_km": {
+            "best": 0.023,
+            "worst": 0.042
+          },
+          "mirror": {
+            "mirror_offset_km": 870.7,
+            "noncentrality": 40108.54,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0003,
+            0.0007
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.004
+          },
+          "mirror": {
+            "mirror_offset_km": 870.6,
+            "noncentrality": 4334228.81,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0057,
+            0.0103
+          ],
+          "min_detectable_km": {
+            "best": 0.034,
+            "worst": 0.062
+          },
+          "mirror": {
+            "mirror_offset_km": 870.7,
+            "noncentrality": 18447.8,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 45.0,
+        "window_s": 240.0,
+        "ts38133": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0031,
+            0.0032
+          ],
+          "min_detectable_km": {
+            "best": 0.021,
+            "worst": 0.022
+          },
+          "mirror": {
+            "mirror_offset_km": 872.3,
+            "noncentrality": 733349.95,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0003,
+            0.0004
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.003
+          },
+          "mirror": {
+            "mirror_offset_km": 871.6,
+            "noncentrality": 53525055.83,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0046,
+            0.0048
+          ],
+          "min_detectable_km": {
+            "best": 0.031,
+            "worst": 0.033
+          },
+          "mirror": {
+            "mirror_offset_km": 872.3,
+            "noncentrality": 333445.15,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 10.0,
+        "ts38133": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0189,
+            0.0868
+          ],
+          "min_detectable_km": {
+            "best": 0.083,
+            "worst": 0.377
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 1.05,
+            "pd": 0.0346
+          }
+        },
+        "ssb_only": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0012,
+            0.0056
+          ],
+          "min_detectable_km": {
+            "best": 0.005,
+            "worst": 0.024
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 1.05,
+            "pd": 0.0346
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.028,
+            0.1288
+          ],
+          "min_detectable_km": {
+            "best": 0.123,
+            "worst": 0.561
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 1.05,
+            "pd": 0.0346
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 20.0,
+        "ts38133": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0155,
+            0.0437
+          ],
+          "min_detectable_km": {
+            "best": 0.073,
+            "worst": 0.205
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 8.33,
+            "pd": 0.3464
+          }
+        },
+        "ssb_only": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.001,
+            0.0028
+          ],
+          "min_detectable_km": {
+            "best": 0.005,
+            "worst": 0.013
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 1043.53,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.023,
+            0.0649
+          ],
+          "min_detectable_km": {
+            "best": 0.108,
+            "worst": 0.304
+          },
+          "mirror": {
+            "mirror_offset_km": 312.9,
+            "noncentrality": 6.0,
+            "pd": 0.2164
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 30.0,
+        "ts38133": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0135,
+            0.0279
+          ],
+          "min_detectable_km": {
+            "best": 0.066,
+            "worst": 0.137
+          },
+          "mirror": {
+            "mirror_offset_km": 313.0,
+            "noncentrality": 34.82,
+            "pd": 0.9861
+          }
+        },
+        "ssb_only": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0009,
+            0.0018
+          ],
+          "min_detectable_km": {
+            "best": 0.004,
+            "worst": 0.009
+          },
+          "mirror": {
+            "mirror_offset_km": 313.0,
+            "noncentrality": 6015.49,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.02,
+            0.0415
+          ],
+          "min_detectable_km": {
+            "best": 0.098,
+            "worst": 0.204
+          },
+          "mirror": {
+            "mirror_offset_km": 313.0,
+            "noncentrality": 21.07,
+            "pd": 0.8346
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 60.0,
+        "ts38133": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0104,
+            0.0124
+          ],
+          "min_detectable_km": {
+            "best": 0.057,
+            "worst": 0.067
+          },
+          "mirror": {
+            "mirror_offset_km": 313.1,
+            "noncentrality": 531.59,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0007,
+            0.0008
+          ],
+          "min_detectable_km": {
+            "best": 0.004,
+            "worst": 0.005
+          },
+          "mirror": {
+            "mirror_offset_km": 313.1,
+            "noncentrality": 107110.07,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0155,
+            0.0183
+          ],
+          "min_detectable_km": {
+            "best": 0.084,
+            "worst": 0.099
+          },
+          "mirror": {
+            "mirror_offset_km": 313.1,
+            "noncentrality": 264.99,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 120.0,
+        "ts38133": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0055,
+            0.0082
+          ],
+          "min_detectable_km": {
+            "best": 0.033,
+            "worst": 0.05
+          },
+          "mirror": {
+            "mirror_offset_km": 313.7,
+            "noncentrality": 9386.51,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0004,
+            0.0006
+          ],
+          "min_detectable_km": {
+            "best": 0.003,
+            "worst": 0.003
+          },
+          "mirror": {
+            "mirror_offset_km": 313.5,
+            "noncentrality": 1583639.09,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0082,
+            0.0122
+          ],
+          "min_detectable_km": {
+            "best": 0.05,
+            "worst": 0.074
+          },
+          "mirror": {
+            "mirror_offset_km": 313.7,
+            "noncentrality": 4346.41,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 70.0,
+        "window_s": 240.0,
+        "ts38133": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0028,
+            0.0069
+          ],
+          "min_detectable_km": {
+            "best": 0.019,
+            "worst": 0.047
+          },
+          "mirror": {
+            "mirror_offset_km": 315.1,
+            "noncentrality": 147844.79,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0003,
+            0.0005
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.004
+          },
+          "mirror": {
+            "mirror_offset_km": 314.3,
+            "noncentrality": 14360429.97,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0041,
+            0.0102
+          ],
+          "min_detectable_km": {
+            "best": 0.028,
+            "worst": 0.07
+          },
+          "mirror": {
+            "mirror_offset_km": 315.1,
+            "noncentrality": 67286.97,
+            "pd": 1.0
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 10.0,
+        "ts38133": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.0819,
+            0.1842
+          ],
+          "min_detectable_km": {
+            "best": 0.36,
+            "worst": 0.824
+          },
+          "mirror": {
+            "mirror_offset_km": 30.4,
+            "noncentrality": 0.01,
+            "pd": 0.0102
+          }
+        },
+        "ssb_only": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.005,
+            0.0111
+          ],
+          "min_detectable_km": {
+            "best": 0.022,
+            "worst": 0.049
+          },
+          "mirror": {
+            "mirror_offset_km": 30.4,
+            "noncentrality": 0.01,
+            "pd": 0.0102
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 2,
+          "crb_semi_axes_km": [
+            0.1217,
+            0.2735
+          ],
+          "min_detectable_km": {
+            "best": 0.534,
+            "worst": 1.24
+          },
+          "mirror": {
+            "mirror_offset_km": 30.4,
+            "noncentrality": 0.01,
+            "pd": 0.0102
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 20.0,
+        "ts38133": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0413,
+            0.151
+          ],
+          "min_detectable_km": {
+            "best": 0.194,
+            "worst": 0.705
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 0.1,
+            "pd": 0.0112
+          }
+        },
+        "ssb_only": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0025,
+            0.0092
+          ],
+          "min_detectable_km": {
+            "best": 0.012,
+            "worst": 0.042
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 12.76,
+            "pd": 0.5915
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 3,
+          "crb_semi_axes_km": [
+            0.0614,
+            0.2242
+          ],
+          "min_detectable_km": {
+            "best": 0.289,
+            "worst": 1.059
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 0.07,
+            "pd": 0.0109
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 30.0,
+        "ts38133": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0264,
+            0.1314
+          ],
+          "min_detectable_km": {
+            "best": 0.13,
+            "worst": 0.626
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 0.39,
+            "pd": 0.0143
+          }
+        },
+        "ssb_only": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0016,
+            0.008
+          ],
+          "min_detectable_km": {
+            "best": 0.008,
+            "worst": 0.038
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 73.45,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 4,
+          "crb_semi_axes_km": [
+            0.0393,
+            0.1951
+          ],
+          "min_detectable_km": {
+            "best": 0.194,
+            "worst": 0.938
+          },
+          "mirror": {
+            "mirror_offset_km": 30.5,
+            "noncentrality": 0.24,
+            "pd": 0.0126
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 60.0,
+        "ts38133": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0117,
+            0.1016
+          ],
+          "min_detectable_km": {
+            "best": 0.064,
+            "worst": 0.48
+          },
+          "mirror": {
+            "mirror_offset_km": 30.7,
+            "noncentrality": 5.85,
+            "pd": 0.1112
+          }
+        },
+        "ssb_only": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0008,
+            0.0064
+          ],
+          "min_detectable_km": {
+            "best": 0.004,
+            "worst": 0.03
+          },
+          "mirror": {
+            "mirror_offset_km": 30.7,
+            "noncentrality": 1296.14,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 7,
+          "crb_semi_axes_km": [
+            0.0174,
+            0.1508
+          ],
+          "min_detectable_km": {
+            "best": 0.095,
+            "worst": 0.716
+          },
+          "mirror": {
+            "mirror_offset_km": 30.7,
+            "noncentrality": 2.94,
+            "pd": 0.0444
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 120.0,
+        "ts38133": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0053,
+            0.0791
+          ],
+          "min_detectable_km": {
+            "best": 0.032,
+            "worst": 0.337
+          },
+          "mirror": {
+            "mirror_offset_km": 31.2,
+            "noncentrality": 103.73,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0004,
+            0.0053
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.024
+          },
+          "mirror": {
+            "mirror_offset_km": 31.1,
+            "noncentrality": 18807.99,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 13,
+          "crb_semi_axes_km": [
+            0.0079,
+            0.1174
+          ],
+          "min_detectable_km": {
+            "best": 0.048,
+            "worst": 0.501
+          },
+          "mirror": {
+            "mirror_offset_km": 31.2,
+            "noncentrality": 48.1,
+            "pd": 0.9797
+          }
+        }
+      },
+      {
+        "pass_max_el_deg": 88.0,
+        "window_s": 240.0,
+        "ts38133": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0027,
+            0.064
+          ],
+          "min_detectable_km": {
+            "best": 0.018,
+            "worst": 0.229
+          },
+          "mirror": {
+            "mirror_offset_km": 32.4,
+            "noncentrality": 1708.26,
+            "pd": 1.0
+          }
+        },
+        "ssb_only": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.0003,
+            0.0048
+          ],
+          "min_detectable_km": {
+            "best": 0.002,
+            "worst": 0.02
+          },
+          "mirror": {
+            "mirror_offset_km": 31.6,
+            "noncentrality": 166490.24,
+            "pd": 1.0
+          }
+        },
+        "ts38133_floor10m": {
+          "instants": 25,
+          "crb_semi_axes_km": [
+            0.004,
+            0.095
+          ],
+          "min_detectable_km": {
+            "best": 0.027,
+            "worst": 0.34
+          },
+          "mirror": {
+            "mirror_offset_km": 32.4,
+            "noncentrality": 777.53,
+            "pd": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "meosar": {
+    "targets": {
+      "fgb": [
+        [
+          0,
+          5,
+          0.9
+        ],
+        [
+          600,
+          5,
+          0.95
+        ],
+        [
+          600,
+          10,
+          0.98
+        ]
+      ],
+      "sgb": [
+        [
+          0,
+          5,
+          0.95
+        ],
+        [
+          30,
+          5,
+          0.97
+        ],
+        [
+          300,
+          1,
+          0.97
+        ]
+      ]
+    },
+    "max_satellites": 4,
+    "results": {
+      "fgb_t019": {
+        "fraction_within": {
+          "0s_5km": 0.982,
+          "600s_5km": 1.0,
+          "600s_10km": 1.0
+        },
+        "worst_epoch_fraction_within": {
+          "0s_5km": 0.9064,
+          "600s_5km": 1.0,
+          "600s_10km": 1.0
+        },
+        "single_burst_r95_km": {
+          "median": 2.882,
+          "max": 5.851
+        }
+      },
+      "fgb_link": {
+        "fraction_within": {
+          "0s_5km": 1.0,
+          "600s_5km": 1.0,
+          "600s_10km": 1.0
+        },
+        "worst_epoch_fraction_within": {
+          "0s_5km": 1.0,
+          "600s_5km": 1.0,
+          "600s_10km": 1.0
+        },
+        "single_burst_r95_km": {
+          "median": 0.212,
+          "max": 0.426
+        }
+      },
+      "sgb_t019": {
+        "fraction_within": {
+          "0s_5km": 1.0,
+          "30s_5km": 1.0,
+          "300s_1km": 1.0
+        },
+        "worst_epoch_fraction_within": {
+          "0s_5km": 1.0,
+          "30s_5km": 1.0,
+          "300s_1km": 1.0
+        },
+        "single_burst_r95_km": {
+          "median": 0.586,
+          "max": 0.667
+        }
+      },
+      "sgb_link": {
+        "fraction_within": {
+          "0s_5km": 1.0,
+          "30s_5km": 1.0,
+          "300s_1km": 1.0
+        },
+        "worst_epoch_fraction_within": {
+          "0s_5km": 1.0,
+          "30s_5km": 1.0,
+          "300s_1km": 1.0
+        },
+        "single_burst_r95_km": {
+          "median": 0.06,
+          "max": 0.07
+        }
+      }
+    },
+    "solver_check": {
+      "epoch_s": 40000.0,
+      "satellites": 4,
+      "solver_within_5km": 1.0,
+      "crb_within_5km": 1.0,
+      "solver_r95_km": 2.658,
+      "crb_r95_km": 2.679
+    },
+    "uniqueness": {
+      "starts": 1344,
+      "ended_at_beacon": 1304,
+      "false_minima": 40,
+      "lowest_false_noncentrality": 217942.4,
+      "pd_reject_lowest": 1.0
+    }
+  },
+  "leosar": [
+    {
+      "pass_max_el_deg": 25.0,
+      "bursts": 8,
+      "sigma_foa_hz": 1.218,
+      "drift_ignored": {
+        "crb_semi_axes_km": [
+          0.147,
+          0.155
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 1721.3,
+          "noncentrality": 2174.21,
+          "pd": 1.0
+        }
+      },
+      "drift_estimated": {
+        "crb_semi_axes_km": [
+          0.154,
+          0.374
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 1703.4,
+          "noncentrality": 8.91,
+          "pd": 0.3454
+        }
+      },
+      "bias_km_if_drift_ignored": 0.242
+    },
+    {
+      "pass_max_el_deg": 45.0,
+      "bursts": 8,
+      "sigma_foa_hz": 1.218,
+      "drift_ignored": {
+        "crb_semi_axes_km": [
+          0.095,
+          0.15
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 852.5,
+          "noncentrality": 1429.24,
+          "pd": 1.0
+        }
+      },
+      "drift_estimated": {
+        "crb_semi_axes_km": [
+          0.095,
+          0.252
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 859.9,
+          "noncentrality": 15.85,
+          "pd": 0.6935
+        }
+      },
+      "bias_km_if_drift_ignored": 0.22
+    },
+    {
+      "pass_max_el_deg": 70.0,
+      "bursts": 9,
+      "sigma_foa_hz": 1.218,
+      "drift_ignored": {
+        "crb_semi_axes_km": [
+          0.064,
+          0.262
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 301.2,
+          "noncentrality": 514.8,
+          "pd": 1.0
+        }
+      },
+      "drift_estimated": {
+        "crb_semi_axes_km": [
+          0.065,
+          0.338
+        ],
+        "within_5km": 1.0,
+        "mirror": {
+          "mirror_offset_km": 306.2,
+          "noncentrality": 15.46,
+          "pd": 0.644
+        }
+      },
+      "bias_km_if_drift_ignored": 0.358
+    },
+    {
+      "pass_max_el_deg": 88.0,
+      "bursts": 8,
+      "sigma_foa_hz": 1.218,
+      "drift_ignored": {
+        "crb_semi_axes_km": [
+          0.066,
+          3.445
+        ],
+        "within_5km": 0.852,
+        "mirror": {
+          "mirror_offset_km": 18.7,
+          "noncentrality": 1.83,
+          "pd": 0.0379
+        }
+      },
+      "drift_estimated": {
+        "crb_semi_axes_km": [
+          0.066,
+          3.913
+        ],
+        "within_5km": 0.8,
+        "mirror": {
+          "mirror_offset_km": 24.5,
+          "noncentrality": 0.07,
+          "pd": 0.0107
+        }
+      },
+      "bias_km_if_drift_ignored": 2.912
+    }
+  ]
+}
