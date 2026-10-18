@@ -1,0 +1,159 @@
+{
+  "ue": "Sophia Antipolis",
+  "gateway": "Toulouse",
+  "mask_deg": 10.0,
+  "limits_us": {
+    "te_ntn_15khz": 0.944,
+    "cp_normal_15khz": 4.6875,
+    "te_ntn_30khz": 0.7161,
+    "cp_normal_30khz": 2.3438
+  },
+  "starlink": {
+    "passes": 12,
+    "ta_info_in_range": true,
+    "drift_variant_clamped": "0/420",
+    "validity_s": {
+      "constant-velocity": {
+        "te_ntn_15khz": 5,
+        "cp_15khz": 10,
+        "ue_part_only_te": 5,
+        "common_part_only_te": 5,
+        "worst_ta_err_us_at_10s": 3.7713,
+        "worst_doppler_err_hz_at_10s": 503.96,
+        "worst_ta_err_us_at_60s": 362.9469,
+        "worst_doppler_err_hz_at_60s": 3223.81,
+        "worst_ta_err_us_at_120s": 2224.3235,
+        "worst_doppler_err_hz_at_120s": 7104.34
+      },
+      "two-body": {
+        "te_ntn_15khz": 5,
+        "cp_15khz": 10,
+        "ue_part_only_te": 120,
+        "common_part_only_te": 5,
+        "worst_ta_err_us_at_10s": 1.4723,
+        "worst_doppler_err_hz_at_10s": 0.91,
+        "worst_ta_err_us_at_60s": 296.0363,
+        "worst_doppler_err_hz_at_60s": 4.85,
+        "worst_ta_err_us_at_120s": 2029.97,
+        "worst_doppler_err_hz_at_120s": 11.87
+      }
+    },
+    "validity_joint_s": {
+      "te_ntn_15khz": {
+        "constant-velocity + common taylor": 5,
+        "constant-velocity + common fit": 5,
+        "two-body + common taylor": 5,
+        "two-body + common fit": 20
+      },
+      "cp_15khz": {
+        "constant-velocity + common taylor": 10,
+        "constant-velocity + common fit": 10,
+        "two-body + common taylor": 10,
+        "two-body + common fit": 40
+      }
+    },
+    "rtt_ms": {
+      "min": 7.257,
+      "max": 21.83
+    },
+    "k_offset": {
+      "cell_specific_slots": 25,
+      "cell_worst_rtt_ms": 24.988,
+      "highest_sat_km": 574.6,
+      "ue_specific_max_slots": 22,
+      "rp_at_satellite_kmac_slots": 12
+    },
+    "harq": {
+      "scs_15khz": {
+        "needed_max": 22,
+        "needed_median": 15,
+        "enough_16": 0.692,
+        "enough_32": 1.0,
+        "duty_16": 0.969,
+        "duty_32": 1.0
+      },
+      "scs_30khz": {
+        "needed_max": 44,
+        "needed_median": 29,
+        "enough_16": 0.037,
+        "enough_32": 0.692,
+        "duty_16": 0.606,
+        "duty_32": 0.969
+      }
+    }
+  },
+  "oneweb": {
+    "passes": 12,
+    "ta_info_in_range": true,
+    "drift_variant_clamped": "0/917",
+    "validity_s": {
+      "constant-velocity": {
+        "te_ntn_15khz": 5,
+        "cp_15khz": 10,
+        "ue_part_only_te": 5,
+        "common_part_only_te": 15,
+        "worst_ta_err_us_at_10s": 2.3801,
+        "worst_doppler_err_hz_at_10s": 464.47,
+        "worst_ta_err_us_at_60s": 109.7352,
+        "worst_doppler_err_hz_at_60s": 2820.04,
+        "worst_ta_err_us_at_120s": 554.0553,
+        "worst_doppler_err_hz_at_120s": 5798.11
+      },
+      "two-body": {
+        "te_ntn_15khz": 15,
+        "cp_15khz": 25,
+        "ue_part_only_te": 180,
+        "common_part_only_te": 15,
+        "worst_ta_err_us_at_10s": 0.1958,
+        "worst_doppler_err_hz_at_10s": 0.52,
+        "worst_ta_err_us_at_60s": 41.1714,
+        "worst_doppler_err_hz_at_60s": 2.56,
+        "worst_ta_err_us_at_120s": 317.8355,
+        "worst_doppler_err_hz_at_120s": 6.31
+      }
+    },
+    "validity_joint_s": {
+      "te_ntn_15khz": {
+        "constant-velocity + common taylor": 5,
+        "constant-velocity + common fit": 5,
+        "two-body + common taylor": 15,
+        "two-body + common fit": 45
+      },
+      "cp_15khz": {
+        "constant-velocity + common taylor": 10,
+        "constant-velocity + common fit": 10,
+        "two-body + common taylor": 25,
+        "two-body + common fit": 60
+      }
+    },
+    "rtt_ms": {
+      "min": 16.476,
+      "max": 42.174
+    },
+    "k_offset": {
+      "cell_specific_slots": 43,
+      "cell_worst_rtt_ms": 42.375,
+      "highest_sat_km": 1225.3,
+      "ue_specific_max_slots": 43,
+      "rp_at_satellite_kmac_slots": 22
+    },
+    "harq": {
+      "scs_15khz": {
+        "needed_max": 43,
+        "needed_median": 29,
+        "enough_16": 0.0,
+        "enough_32": 0.606,
+        "duty_16": 0.585,
+        "duty_32": 0.955
+      },
+      "scs_30khz": {
+        "needed_max": 85,
+        "needed_median": 58,
+        "enough_16": 0.0,
+        "enough_32": 0.0,
+        "duty_16": 0.293,
+        "duty_32": 0.585
+      }
+    }
+  }
+}
