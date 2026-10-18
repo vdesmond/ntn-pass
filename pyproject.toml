@@ -1,0 +1,40 @@
+[project]
+name = "ntn-pass"
+version = "0.1.0"
+description = "Locating a ground transmitter from satellite delay and Doppler: NR NTN location verification and COSPAS-SARSAT, from real orbits"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "vdesmond", email = "vignesh.desmond@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "itur>=0.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "scipy>=1.18.1",
+    "sgp4>=2.27",
+]
+
+[project.scripts]
+ntn-pass = "ntn_pass:main"
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "skyfield>=1.55",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

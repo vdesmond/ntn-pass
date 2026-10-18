@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.DS_Store
+.pytest_cache/
+
+# planning notes, not part of the public repo
+project-idea.md
+.ruff_cache/
