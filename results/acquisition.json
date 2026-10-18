@@ -1,0 +1,548 @@
+{
+  "fc_hz": 2000000000.0,
+  "ssb": {
+    "scs_hz": 15000.0,
+    "fs_hz": 3840000.0,
+    "cp_samples": 18,
+    "period_ms": 20.0,
+    "pss_rms_bandwidth_khz": 549.9
+  },
+  "pfa_per_search": 0.01,
+  "searches": {
+    "cold": {
+      "freq_hypotheses": 21,
+      "span_hz": 50000.0,
+      "timing_lags": 76800,
+      "cells": 4838400
+    },
+    "warm": {
+      "freq_hypotheses": 1,
+      "span_hz": 0.0,
+      "timing_lags": 548,
+      "cells": 1644
+    }
+  },
+  "threshold": {
+    "cold, 1 burst": 20.0,
+    "cold, 4 bursts, drift compensated": 28.35,
+    "cold, 4 bursts, no drift compensation": 28.35,
+    "warm, 1 burst": 12.01,
+    "warm, 4 bursts": 19.25
+  },
+  "snr_re_db_for_pd_0.9": {
+    "cold, 1 burst": -6.185185185185185,
+    "cold, 4 bursts, drift compensated": -11.148148148148149,
+    "cold, 4 bursts, no drift compensation": -8.32,
+    "warm, 1 burst": -8.380952380952381,
+    "warm, 4 bursts": -12.76470588235294
+  },
+  "snr_re_db_for_pd_0.9_analytic_aligned": {
+    "warm, 1 burst": -8.35,
+    "warm, 4 bursts": -13.23
+  },
+  "pd_curve": {
+    "snr_re_db": [
+      -18.0,
+      -17.0,
+      -16.0,
+      -15.0,
+      -14.0,
+      -13.0,
+      -12.0,
+      -11.0,
+      -10.0,
+      -9.0,
+      -8.0,
+      -7.0,
+      -6.0,
+      -5.0,
+      -4.0,
+      -3.0,
+      -2.0
+    ],
+    "cold, 1 burst": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.007,
+      0.0,
+      0.013,
+      0.027,
+      0.1,
+      0.253,
+      0.447,
+      0.753,
+      0.933,
+      0.98,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cold, 4 bursts, drift compensated": [
+      0.0,
+      0.0,
+      0.013,
+      0.067,
+      0.187,
+      0.493,
+      0.747,
+      0.927,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cold, 4 bursts, no drift compensation": [
+      0.0,
+      0.0,
+      0.0,
+      0.013,
+      0.067,
+      0.16,
+      0.32,
+      0.46,
+      0.613,
+      0.787,
+      0.953,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "warm, 1 burst": [
+      0.013,
+      0.013,
+      0.013,
+      0.027,
+      0.053,
+      0.08,
+      0.153,
+      0.38,
+      0.6,
+      0.813,
+      0.953,
+      0.987,
+      0.993,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "warm, 4 bursts": [
+      0.06,
+      0.127,
+      0.32,
+      0.393,
+      0.727,
+      0.873,
+      0.987,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "accuracy": {
+    "snr_re_db": [
+      -12.0,
+      -10.0,
+      -8.0,
+      -6.0,
+      -4.0,
+      -2.0,
+      0.0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0,
+      14.0,
+      16.0,
+      18.0,
+      20.0
+    ],
+    "pd_cold_1_burst": [
+      0.015,
+      0.1,
+      0.465,
+      0.945,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_detected": [
+      3,
+      20,
+      93,
+      189,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "rmse_toa_ns": [
+      NaN,
+      NaN,
+      30.986,
+      25.746,
+      19.431,
+      15.388,
+      12.984,
+      10.44,
+      8.213,
+      6.302,
+      5.086,
+      4.387,
+      3.229,
+      2.392,
+      2.22,
+      1.547,
+      1.393
+    ],
+    "crb_toa_ns": [
+      51.121,
+      40.607,
+      32.255,
+      25.621,
+      20.352,
+      16.166,
+      12.841,
+      10.2,
+      8.102,
+      6.436,
+      5.112,
+      4.061,
+      3.226,
+      2.562,
+      2.035,
+      1.617,
+      1.284
+    ],
+    "rmse_foa_hz": [
+      NaN,
+      NaN,
+      759.51,
+      542.76,
+      709.41,
+      114.29,
+      98.87,
+      76.72,
+      61.16,
+      52.73,
+      37.11,
+      30.42,
+      26.87,
+      19.29,
+      16.42,
+      13.79,
+      9.64
+    ],
+    "crb_foa_hz": [
+      393.98,
+      312.95,
+      248.58,
+      197.46,
+      156.84,
+      124.59,
+      98.96,
+      78.61,
+      62.44,
+      49.6,
+      39.4,
+      31.29,
+      24.86,
+      19.75,
+      15.68,
+      12.46,
+      9.9
+    ],
+    "outlier_rate": [
+      NaN,
+      NaN,
+      0.011,
+      0.005,
+      0.01,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "crb_region_from_snr_re_db": -2.0,
+    "toa_crb_region_from_snr_re_db": -8.0
+  },
+  "san_frequency_error": {
+    "ppm": 0.05,
+    "hz": 100.0,
+    "range_rate_m_s": 14.99
+  },
+  "passes": {
+    "starlink": {
+      "payload_orbit": "LEO-600",
+      "passes": {
+        "overhead": {
+          "sat": "STARLINK-37332",
+          "max_el_deg": 89.9,
+          "sets": {
+            "set1": {
+              "snr_re_db": [
+                2.94,
+                13.89
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.0,
+              "sigma_toa_ns": [
+                2.59,
+                9.15
+              ],
+              "sigma_dl_toa_times_c_m": [
+                0.78,
+                2.74
+              ],
+              "sigma_foa_hz": [
+                20.0,
+                70.5
+              ],
+              "sigma_range_rate_m_s": [
+                3.0,
+                10.57
+              ]
+            },
+            "set2": {
+              "snr_re_db": [
+                -3.06,
+                7.89
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.121,
+              "sigma_toa_ns": [
+                5.18,
+                17.41
+              ],
+              "sigma_dl_toa_times_c_m": [
+                1.55,
+                5.22
+              ],
+              "sigma_foa_hz": [
+                39.9,
+                300.6
+              ],
+              "sigma_range_rate_m_s": [
+                5.98,
+                45.05
+              ]
+            }
+          }
+        },
+        "low": {
+          "sat": "STARLINK-37091",
+          "max_el_deg": 30.0,
+          "sets": {
+            "set1": {
+              "snr_re_db": [
+                2.93,
+                8.6
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.0,
+              "sigma_toa_ns": [
+                4.77,
+                9.16
+              ],
+              "sigma_dl_toa_times_c_m": [
+                1.43,
+                2.75
+              ],
+              "sigma_foa_hz": [
+                36.8,
+                70.6
+              ],
+              "sigma_range_rate_m_s": [
+                5.51,
+                10.58
+              ]
+            },
+            "set2": {
+              "snr_re_db": [
+                -3.07,
+                2.6
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.156,
+              "sigma_toa_ns": [
+                9.52,
+                17.42
+              ],
+              "sigma_dl_toa_times_c_m": [
+                2.85,
+                5.22
+              ],
+              "sigma_foa_hz": [
+                73.4,
+                302.2
+              ],
+              "sigma_range_rate_m_s": [
+                11.0,
+                45.31
+              ]
+            }
+          }
+        }
+      }
+    },
+    "oneweb": {
+      "payload_orbit": "LEO-1200",
+      "passes": {
+        "overhead": {
+          "sat": "ONEWEB-0113",
+          "max_el_deg": 89.9,
+          "sets": {
+            "set1": {
+              "snr_re_db": [
+                3.11,
+                11.59
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.0,
+              "sigma_toa_ns": [
+                3.38,
+                8.98
+              ],
+              "sigma_dl_toa_times_c_m": [
+                1.01,
+                2.69
+              ],
+              "sigma_foa_hz": [
+                26.1,
+                69.2
+              ],
+              "sigma_range_rate_m_s": [
+                3.91,
+                10.37
+              ]
+            },
+            "set2": {
+              "snr_re_db": [
+                -2.89,
+                5.59
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.108,
+              "sigma_toa_ns": [
+                6.75,
+                17.08
+              ],
+              "sigma_dl_toa_times_c_m": [
+                2.02,
+                5.12
+              ],
+              "sigma_foa_hz": [
+                52.0,
+                258.2
+              ],
+              "sigma_range_rate_m_s": [
+                7.79,
+                38.7
+              ]
+            }
+          }
+        },
+        "low": {
+          "sat": "ONEWEB-0324",
+          "max_el_deg": 30.0,
+          "sets": {
+            "set1": {
+              "snr_re_db": [
+                3.2,
+                7.24
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.0,
+              "sigma_toa_ns": [
+                5.58,
+                8.88
+              ],
+              "sigma_dl_toa_times_c_m": [
+                1.67,
+                2.66
+              ],
+              "sigma_foa_hz": [
+                43.0,
+                68.4
+              ],
+              "sigma_range_rate_m_s": [
+                6.44,
+                10.26
+              ]
+            },
+            "set2": {
+              "snr_re_db": [
+                -2.8,
+                1.24
+              ],
+              "pd_cold_1_burst_min": 1.0,
+              "share_below_crb_region": 0.143,
+              "sigma_toa_ns": [
+                11.13,
+                16.89
+              ],
+              "sigma_dl_toa_times_c_m": [
+                3.34,
+                5.06
+              ],
+              "sigma_foa_hz": [
+                85.7,
+                236.8
+              ],
+              "sigma_range_rate_m_s": [
+                12.85,
+                35.5
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
