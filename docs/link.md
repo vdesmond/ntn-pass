@@ -55,6 +55,6 @@ on OneWeb, so a fixed link-budget margin either wastes most of the pass or loses
   truncated rather than rounded. These 14 are strict `xfail` tests, and ours differ from the TR's inputs
   only by input precision (G/T 15.94 vs 15.9).
 - **Gaseous loss**: Annex 2 (the TR's stated baseline) reproduces all the LEO rows at 30°. Only Annex 1
-  reproduces the GEO 12.5° row at 20 GHz (1.2 dB; Annex 2 gives 1.13). GEO is not used here.
+  reproduces the GEO 12.5° row at 20 GHz (1.2 dB, Annex 2 gives 1.13). GEO is not used here.
 - **Not reproducible as tabulated**: the S-band UL rows print the bandwidth as "0.4 MHz" but their
   CNRs correspond to 360 kHz, the value in Table 6.1.3.2-1.

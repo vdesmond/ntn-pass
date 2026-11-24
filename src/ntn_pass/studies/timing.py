@@ -121,7 +121,7 @@ def run(**kw):
                     )
         rtt = np.concatenate(rtt_all)
         ko, ko_rtt, h = T.cell_k_offset(f, MASK)
-        r_key["validity_joint_s"] = joint  # worst over passes; 0 = not even the shortest value holds
+        r_key["validity_joint_s"] = joint  # worst over passes, 0 = not even the shortest value holds
         r_key["rtt_ms"] = dict(min=round(float(rtt.min()) * 1e3, 3), max=round(float(rtt.max()) * 1e3, 3))
         r_key["k_offset"] = dict(
             cell_specific_slots=ko, cell_worst_rtt_ms=round(ko_rtt * 1e3, 3), highest_sat_km=round(h / 1e3, 1),

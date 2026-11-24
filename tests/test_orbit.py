@@ -24,7 +24,7 @@ def test_pass_edges_and_tca(survey, key):
 
 @pytest.mark.parametrize("key", ["starlink", "oneweb"])
 def test_doppler_sign_and_monotone(survey, key):
-    """Approaching -> positive Doppler; a LEO pass sweeps it downwards through zero at TCA."""
+    """Approaching -> positive Doppler. A LEO pass sweeps it downwards through zero at TCA."""
     s = survey[key]
     p = max(s["passes"], key=lambda p: p.max_el_deg)
     t, lk = orbit.pass_track(s["fleet"].sats[p.sat], SOPHIA, p, 1.0)

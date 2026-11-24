@@ -16,7 +16,7 @@ from .plot import INK2, SERIES, save, style
 LOW_PASS_MIN_EL = 15.0
 PLOT_HOURS = {"starlink": 2, "oneweb": 2, "galileo": 24}
 POLICIES = [("max-elevation", 0.0), ("max-elevation", 5.0), ("until-mask", 0.0)]
-PLOT_POLICY = ("until-mask", 0.0)  # readable sawtooth; max-elevation switches every few tens of seconds
+PLOT_POLICY = ("until-mask", 0.0)  # readable sawtooth (max-elevation switches every few tens of seconds)
 
 
 def _pass_summary(p, lk):

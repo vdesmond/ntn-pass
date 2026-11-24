@@ -87,7 +87,7 @@ def delay_common_s(info: TAInfo, dt_s):
 
 
 def quantize_state(r, v):
-    """SIB19 positionVelocity: ECEF state rounded to 1.3 m / 0.06 m/s steps; also returns the codes."""
+    """SIB19 positionVelocity: ECEF state rounded to 1.3 m / 0.06 m/s steps. Also returns the codes."""
     rc = np.round(np.asarray(r) / nr.POS_LSB_M).astype(np.int64)
     vc = np.round(np.asarray(v) / nr.VEL_LSB_MS).astype(np.int64)
     ok = np.all((rc >= nr.POS_RANGE[0]) & (rc <= nr.POS_RANGE[1])) and np.all(
@@ -259,7 +259,7 @@ def max_validity(err, dt, limit):
 
 def cell_k_offset(fleet, mask_deg):
     """Cell-wide K_offset from the worst geometry: UE and gateway both at the mask, highest
-    satellite in the fleet (spherical Earth; the UE-specific remainder goes in the differential MAC CE)."""
+    satellite in the fleet, spherical Earth. The UE-specific remainder goes in the differential MAC CE."""
     h = max(tle.mean_altitude_km(s) for s in fleet.sats) * 1e3
     rtt = 2 * 2 * slant_range(h, mask_deg) / C_LIGHT
     return slots_15khz(rtt), float(rtt), h

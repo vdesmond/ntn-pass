@@ -24,7 +24,7 @@ def _arrival(dl, t_tx0=0.0):
 
 
 def _burst(dl, df, frac, rng, t_tx0=0.0, n=1600, snr_db=None, theta=0.7):
-    """Window opened `frac` samples before the CP of the PSS; noise-free unless snr_db is given."""
+    """Window opened `frac` samples before the CP of the PSS, noise-free unless snr_db is given."""
     g = nr.ssb_grid(N_ID1, N_ID2, rng)
     t0 = _arrival(dl, t_tx0) - (frac + nr.NCP) / nr.FS
     t = t0 + np.arange(n) / nr.FS
@@ -107,7 +107,7 @@ def test_noise_only_statistic(rng):
 
 def test_drift_compensated_combining():
     """Four bursts 20 ms apart at 22 ppm drift (1.7 samples per burst): with the drift implied by the
-    frequency hypothesis removed, the combined peak is ~4x one burst; without, it smears."""
+    frequency hypothesis removed, the combined peak is ~4x one burst, and without it the peak smears."""
     rng = np.random.default_rng(2)
     dl = nr.Delay.from_look(600e3, -6700.0, 0.0)
     f_true = -FC * dl.d1
@@ -148,7 +148,7 @@ def test_fine_estimator_reaches_crb(rng):
 @pytest.mark.parametrize("snr_db,k", [(-9.0, 1), (-8.0, 1), (-13.0, 4)])
 def test_detection_matches_noncentral_chi2(snr_db, k):
     """At the true lag with no frequency or timing offset, 2T ~ ncx2(2K, 254 K SNR): Monte Carlo Pd against
-    the analytic value at the warm-search threshold. This ties the detection tables to the per-RE SNR."""
+    the analytic value at the warm-search threshold."""
     rng = np.random.default_rng(3)
     thr = D.threshold(acquisition.PFA, D.n_cells(2 * nr.NSYM, 1), k)
     g = nr.ssb_grid(N_ID1, N_ID2, rng)

@@ -4,7 +4,7 @@ with the slant range of the spherical-Earth reference geometry (Table 6.1.3.2-1)
 Every input column is checked to the TR's printed precision. The end-to-end CNR matches in the 26 cases
 where the TR is self-consistent. In the other 14 (all Ka-band DL rows, and SC7/SC22 UL) the TR's own
 printed inputs give a CNR 0.05-0.09 dB higher than the printed result (SC6 DL: inputs give 8.58, printed
-8.5), i.e. the printed CNR looks truncated; those are strict xfails.
+8.5), i.e. the printed CNR looks truncated. Those are strict xfails.
 """
 
 import numpy as np
@@ -69,7 +69,7 @@ def test_cnr_tr38821(case, direction):
     assert round(_cnr(case, direction), 1) == tr
 
 
-# Printed DL EIRP (dBm) per case; UL EIRP is 23.0 dBm (handheld) / 76.2 dBm (VSAT) everywhere.
+# Printed DL EIRP (dBm) per case. UL EIRP is 23.0 dBm (handheld) / 76.2 dBm (VSAT) everywhere.
 DL_EIRP_DBM = {
     "SC6": 60.0, "SC7": 55.2, "SC8": 57.0, "SC9": 78.8, "SC10": 74.0,
     "SC11": 66.0, "SC12": 61.2, "SC13": 63.0, "SC14": 84.8, "SC15": 80.0,
@@ -119,7 +119,7 @@ def test_gaseous_annex1_matches_geo_row():
 # 406 MHz: C/S T.019 Annex A and T.016 values reproduced from their own inputs.
 def test_t019_slant_ranges():
     assert ref.slant_range(23_222e3, 5.0) / 1e3 == pytest.approx(28_350, abs=1.0)
-    # GLONASS / GPS columns: within 10 km (0.003 dB of path loss); the TR rounds or uses another radius
+    # GLONASS / GPS columns: within 10 km (0.003 dB of path loss). The TR rounds or uses another radius
     assert ref.slant_range(19_100e3, 5.0) / 1e3 == pytest.approx(24_120, abs=10)
     assert ref.slant_range(20_850e3, 5.0) / 1e3 == pytest.approx(25_920, abs=10)
 

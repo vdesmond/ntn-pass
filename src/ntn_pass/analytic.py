@@ -38,6 +38,6 @@ def doppler_rate_ppm_s_zenith(h_m, r_e=R_EARTH_TR):
 
 
 def max_rtt_s(h_m, el_min_deg, links=1):
-    """Round-trip propagation delay at the minimum elevation; links=2 adds an equally long feeder link
+    """Round-trip propagation delay at the minimum elevation, and links=2 adds an equally long feeder link
     (transparent payload, TR 38.821 Scenarios A/C)."""
     return 2.0 * links * slant_range(h_m, el_min_deg) / C

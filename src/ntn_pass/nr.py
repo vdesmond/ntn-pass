@@ -5,14 +5,14 @@ TS 38.211 5.3.1: normal cyclic prefix 144 kappa 2^-mu T_c (16 kappa T_c longer o
 each half subframe, not used here).
 
 SS/PBCH block, one satellite, vacuum, single path. Clause references cite the TS 38.211 version each clause
-was read in; the numerology and SSB clauses quoted here are unchanged between them. Sequences (TS 38.211
+was read in. The numerology and SSB clauses quoted here are unchanged between them. Sequences (TS 38.211
 V17.6.0 7.4.2.2 PSS, 7.4.2.3 SSS)
 are taken from the floating-point reference of nr-cell-search (github.com/vdesmond/nr-cell-search @ 10f8e1c,
 python/nr_sync.py).
 
 SSB numerology: band n256 (S-band NTN) carries the SSB at 15 kHz, Case A (TS 38.101-5 V17.5.0 Table 5.4.3.3-1).
 nfft = 256 gives fs = 3.84 MHz, enough for the 240-subcarrier (3.6 MHz) block. The normal cyclic prefix
-is 144 kappa 2^-mu T_c = 18 samples; the longer first-symbol CP of each half subframe does not fall on
+is 144 kappa 2^-mu T_c = 18 samples. The longer first-symbol CP of each half subframe does not fall on
 SSB symbols 2-5 or 8-11, so it is not modelled.
 
 Placement: the PSS and SSS occupy subcarriers 56..182 of the 240 (TS 38.211 Table 7.4.3.1-1) and the
@@ -98,7 +98,7 @@ def pss(n_id2: int) -> np.ndarray:
 
 
 def sss(n_id1: int, n_id2: int) -> np.ndarray:
-    """Length-127 SSS in {+1, -1}; m0 couples N_ID2 in, so SSS detection needs the PSS result."""
+    """Length-127 SSS in {+1, -1}. N_ID2 enters through m0, so SSS detection needs the PSS result."""
     if n_id2 not in (0, 1, 2):
         raise ValueError("N_ID2 must be 0, 1 or 2")
     if not 0 <= n_id1 <= 335:

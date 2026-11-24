@@ -30,7 +30,7 @@ GEO = L.Geo.at(BEACON_SITE)
 MAX_SATS = 4
 
 SENSITIVITY_DBHZ = {"fgb": 34.8, "sgb": 30.55}
-T019_SIGMA = {"fgb": (25e-6, 0.20), "sgb": (1e-6, 0.20)}  # (TOA s, FOA Hz); SGB values provisional
+T019_SIGMA = {"fgb": (25e-6, 0.20), "sgb": (1e-6, 0.20)}  # (TOA s, FOA Hz), SGB values provisional
 T019_TARGETS = {  # (time from first burst s, radius km, required fraction), T.019 5.6.1 / 5.6.2
     "fgb": [(0, 5, 0.90), (600, 5, 0.95), (600, 10, 0.98)],
     "sgb": [(0, 5, 0.95), (30, 5, 0.97), (300, 1, 0.97)],
@@ -45,7 +45,7 @@ TRANSLATION_STABILITY_100MS = 4e-12  # FOC (IOV 2e-11, interoperability requirem
 # Satellite-side floors on one satellite's TOA / FOA, independent per satellite (so the emission-time and
 # carrier nuisances do not absorb them): the group-delay uncertainty (95 % -> 1 sigma) and its 3-minute
 # stability (peak-to-peak taken as uniform), and the translation oscillator. The group-delay slope is a
-# deterministic function of the beacon frequency, characterised per satellite (C/S R.018); uncalibrated it
+# deterministic function of the beacon frequency, characterised per satellite (C/S R.018). Uncalibrated it
 # would add up to +-0.75 us at the SGB's +-1.2 kHz carrier tolerance.
 TOA_FLOOR_S = float(np.hypot(GROUP_DELAY_UNC_S / 1.96, GROUP_DELAY_STABILITY_PP_S / np.sqrt(12)))
 FOA_FLOOR_HZ = TRANSLATION_STABILITY_100MS * TRANSLATION_HZ

@@ -25,7 +25,7 @@ def test_ssb_crb_closed_form():
 
 def test_waveform_crb_closed_forms():
     """FOA of a constant-envelope burst matches the tone bound with E/N0 = C/N0 T (phase unknown, time from
-    the middle); TOA of the SGB matches the RMS-bandwidth bound. Within a few percent: the coupling to the
+    the middle). TOA of the SGB matches the RMS-bandwidth bound. Within a few percent: the coupling to the
     other parameters is small."""
     cn0 = 35.0
     for name in ("fgb_150us", "sgb"):

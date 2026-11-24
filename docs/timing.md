@@ -18,7 +18,7 @@ constellation. N_TA (closed-loop commands) and N_TA,offset are left out.
 
 For every 10 s along each pass the network broadcasts new assistance information. The UE then uses it
 for up to 900 s. The resulting TA error is measured against the SGP4 truth and compared with two limits:
-- **Te_NTN** (TS 38.133 V17.23.0 Table 7.1C.2-1; 0.94 µs at 15 kHz). This bounds the UE's transmit timing
+- **Te_NTN** (TS 38.133 V17.23.0 Table 7.1C.2-1, 0.94 µs at 15 kHz). This bounds the UE's transmit timing
   against its own computed TA, so the propagation error has to share it with the UE implementation.
 - **The normal cyclic prefix** (4.69 µs at 15 kHz). This is what the gNB absorbs without
   inter-symbol interference.
@@ -60,11 +60,11 @@ The table gives the largest `ntn-UlSyncValidityDuration` value that holds at eve
 | HARQ processes for no stalling, 30 kHz (median / max) | 29 / 44 | 58 / 85 |
 | single-UE duty cycle with 32 processes, 30 kHz | 0.97 | 0.59 |
 
-The RTT here is also what Rel-18 location verification measures ([locate](locate.md)); HARQ and
+The RTT here is also what Rel-18 location verification measures ([locate](locate.md)). HARQ and
 K_offset are consequences of it that nothing downstream uses.
 
 HARQ is counted as N = ⌈RTT / T_slot⌉. TR 38.821 §6.1.1.3 attributes that sizing to one source's
-simulations; it is not a requirement. A processing-time term is available as a parameter.
+simulations and is not a requirement. A processing-time term is available as a parameter.
 On OneWeb, even Rel-17's 32 processes cover only 61 % of the pass at 15 kHz and none of it at 30 kHz.
 Beyond that, the remedies are disabling HARQ feedback per process (`downlinkHARQ-FeedbackDisabled`) or
 accepting stop-and-wait.

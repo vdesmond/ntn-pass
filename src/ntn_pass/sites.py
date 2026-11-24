@@ -24,7 +24,7 @@ class Site:
         return enu_matrix(self.lat_deg, self.lon_deg)
 
 
-# Approximate coordinates (EURECOM campus; Toulouse city centre).
+# Approximate coordinates (EURECOM campus, Toulouse city centre).
 SOPHIA = Site("Sophia Antipolis", 43.6145, 7.0715, 130.0)
 TOULOUSE = Site("Toulouse", 43.6045, 1.4440, 150.0)
 

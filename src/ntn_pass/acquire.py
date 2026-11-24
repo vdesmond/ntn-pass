@@ -7,7 +7,7 @@ over every searched cell (Bonferroni), which is conservative because neighbourin
 
 Combining K bursts (20 ms apart) non-coherently: a frequency hypothesis f also fixes the delay drift
 tau' = -f / fc, because both come from the same range rate. The correlation of burst k is shifted back by
-tau' k T before summing; without that, a LEO satellite's ~22 us/s drift moves the peak by ~1.7 samples per
+tau' k T before summing. Without that, a LEO satellite's ~22 us/s drift moves the peak by ~1.7 samples per
 burst at 3.84 MHz and smears it.
 
 Fine estimation (cell identity known, so both PSS and SSS are reference signals): FFT both symbols at the
@@ -44,7 +44,7 @@ def n_cells(window_samples, n_freq, n_id2=3):
 
 
 def correlate(rx, replica, f_hz, t0_s=0.0):
-    """Normalised-free PSS matched filter after derotating by f_hz: c[n] = sum_m r[n+m] e^{-j2pi f t} p*[m].
+    """Unnormalised PSS matched filter after derotating by f_hz: c[n] = sum_m r[n+m] e^{-j2pi f t} p*[m].
 
     Returns len(rx) - len(replica) + 1 lags."""
     n = np.arange(len(rx))

@@ -1,14 +1,13 @@
-"""How precisely a received signal can be timed and its frequency measured: Cramer-Rao bounds on the time
-and frequency of arrival (TOA, FOA), shared by the NR SSB and the 406 MHz beacons.
+"""Cramer-Rao bounds on time and frequency of arrival (TOA, FOA), for the NR SSB and the 406 MHz beacons.
 
-Both bounds come from the same Fisher information. For a known signal s(t; tau, f) in complex white noise,
+Both use the same Fisher information. For a known signal s(t; tau, f) in complex white noise,
 J_ij = 2 SNR Re <ds/dtheta_i, ds/dtheta_j>, with the unknown amplitude and phase as nuisances. Only the
 derivative matrix differs:
 - ``waveform_crb``: any sampled waveform at a given C/N0 (the 406 MHz FGB and SGB bursts);
 - ``ssb_crb``: the frequency-domain model of the SSB fine estimator, Z_{s,k} = A exp(-j 2 pi k df tau)
   exp(j 2 pi f t_s) + noise, with 127 tones on two symbols 2 T_sym apart and a per-RE SNR. The phase
-  nuisance is projected out by removing the mean phase derivative; the amplitude decouples.
-The closed forms at the end are the textbook limits both reduce to; the tests hold them against each other.
+  nuisance is projected out by removing the mean phase derivative. The amplitude decouples.
+The closed forms at the end are the textbook limits both reduce to. The tests check them against each other.
 """
 
 import numpy as np
@@ -33,7 +32,7 @@ def ssb_crb(snr_re_lin):
     """(sigma TOA s, sigma FOA Hz) of one SSB (PSS + SSS) at a per-resource-element SNR (linear)."""
     k = nr.TONES.astype(float)
     t = np.array([0.0, 2 * nr.T_SYM])
-    # derivative of the phase w.r.t. (tau, f) per observation; unknown phase removes the mean
+    # derivative of the phase w.r.t. (tau, f) per observation. The unknown phase removes the mean
     d_tau = np.concatenate([-2 * np.pi * k * nr.SCS] * 2)
     d_f = np.repeat(2 * np.pi * t, len(k))
     D = np.stack([d_tau, d_f], axis=1)

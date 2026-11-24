@@ -7,7 +7,7 @@ Noise per instant:
 - RTT: TS 38.133 V19.0.0 Table 10.1.25C.2-1 (FR1-NTN, 15 kHz PRS, >= 52 PRB, 0 dB) bounds the UE Rx-Tx time
   difference to +-(59 + delta) Tc with delta = 80 Tc from Table 10.1.25C.2-2. Read as a 90 % two-sided
   bound (an assumption: the table gives a +- limit, not a sigma). The network leg (gNB Rx-Tx) has no NTN
-  requirement in the sources; taken equal. The ``ssb_only`` case uses the SSB's own TOA bound instead.
+  requirement in the sources, so it is taken as equal. The ``ssb_only`` case uses the SSB's own TOA bound instead.
 - Doppler: the SSB FOA bound at the link-budget SNR (TR 38.821 Set-1, LEO-600 payload, S-band handheld),
   which the fine estimator in ``acquire`` reaches (TOA and FOA both) from -2 dB per resource element, below
   every SNR on these passes.
@@ -27,7 +27,7 @@ GEO = L.Geo.at(SITE)
 FC = lb.FC_S
 UE_RXTX_90_S = (59 + 80) * nr.TC
 SIGMA_RTT_S = np.sqrt(2.0) * UE_RXTX_90_S / stats.norm.ppf(0.95)
-STEP_S = 10.0  # one RTT + Doppler pair every 10 s (assumption; Rel-18 leaves it to the LMF)
+STEP_S = 10.0  # one RTT + Doppler pair every 10 s (assumed, Rel-18 leaves it to the LMF)
 
 
 def measurements(max_el, window_s, ssb_only=False, floor_m=0.0, step_s=STEP_S):

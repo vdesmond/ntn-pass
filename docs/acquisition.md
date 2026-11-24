@@ -25,7 +25,7 @@ Setup:
 - the UE oscillator is GNSS-disciplined (an NR NTN UE has GNSS), so the absolute Doppler is observable.
 
 Two searches, each at a total false-alarm probability of 1 %:
-- **cold**: no ephemeris. ±(24 ppm + 0.05 ppm) in 5 kHz steps (21 hypotheses; 24 ppm is the
+- **cold**: no ephemeris. ±(24 ppm + 0.05 ppm) in 5 kHz steps (21 hypotheses, 24 ppm being the
   TR 38.811 LEO-600 maximum), 20 ms of timing, 3 N_ID2: 4.8 million cells.
 - **warm**: valid SIB19 and GNSS position (connected mode, or idle with a stored SIB19). The UE
   pre-compensates the Doppler and the delay. What is left is the two-body ephemeris error ([timing](timing.md): under
@@ -54,7 +54,7 @@ Two searches, each at a total false-alarm probability of 1 %:
   false-alarm rate, and it removes the 21-hypothesis frequency search.
 - **The detection statistic matches theory.** At the true lag with no offset, 2T follows a noncentral
   chi-square with 2K degrees of freedom and noncentrality 254·K·SNR. That puts the warm single-burst
-  90 % point at −8.35 dB; the full Monte Carlo gives −8.38 dB. With 4 bursts the Monte Carlo is 0.5 dB
+  90 % point at −8.35 dB, and the full Monte Carlo gives −8.38 dB. With 4 bursts the Monte Carlo is 0.5 dB
   short of the aligned value (−12.8 vs −13.2 dB), which is the cost of fractional-sample timing and the
   residual frequency offset.
 
@@ -99,8 +99,8 @@ biases the estimates by 0.7 ns and 0.4 Hz on Starlink.
   enters its Doppler rows.
 - **What [locate](locate.md) takes from here**: the per-SSB FOA bound as the Doppler noise, and the TOA bound
   for its SSB-only RTT case. On Set-1 passes the SNR never drops below −2 dB, where the estimator stops
-  reaching the bound; on Set-2 passes 11–12 % of bursts do, where about 1 % of bursts take the wrong 7 kHz
-  wrap. A fit on those would need the outliers gated, not the inflated RMS; that case is not modelled.
+  reaching the bound. On Set-2 passes 11–12 % of bursts do, where about 1 % of bursts take the wrong 7 kHz
+  wrap. A fit on those would need the outliers gated, not the inflated RMS. That case is not modelled.
   - **The SSB TOA is one leg of the RTT.** Rel-18 measures round-trip time (UE Rx−Tx plus gNB Rx−Tx), and
     the SSB gives only the UE's downlink-receive leg. The main RTT case in [locate](locate.md) therefore
     uses the TS 38.133 accuracy requirement instead.

@@ -2,7 +2,7 @@
 from satellite delay and Doppler, with the measurement noise from ``acquisition`` (NR) and ``beacon``
 (406 MHz).
 
-Three systems, one solver:
+All three systems use the same solver:
 - rel18: NR NTN network verification of a UE-reported location (TS 38.305 V18.8.0 4.3.11) from one LEO
   satellite: RTT and Doppler at several instants. The question is how far off a reported location must be
   before the network can tell, by direction, against TR 38.882's 5-10 km.
@@ -114,7 +114,7 @@ def meosar_monte_carlo(t0=40000.0, kind="fgb", trials=500, seed=1):
 def meosar_uniqueness(step_s=1800.0, hours=24.0, kind="fgb"):
     """Is one burst's fix unique? Noise-free data from the beacon, solver started from every used satellite's
     ground-track mirror and from rings 300 / 1000 / 3000 km out in 8 directions, at every epoch. Exact fits
-    are compared with the beacon in ECEF (the north/east parametrisation wraps); every other end point is a
+    are compared with the beacon in ECEF (the north/east parametrisation wraps). Every other end point is a
     false minimum, scored by the noncentrality of the consistency test there."""
     view = cospas.GalileoView()
     truth = GEO.ecef(np.zeros(2))

@@ -2,7 +2,7 @@
 
 C = 299_792_458.0  # speed of light, m/s
 
-# WGS-72 gravity values are what SGP4 is fitted with; WGS-84 is used for the ground site.
+# WGS-72 gravity values are what SGP4 is fitted with. WGS-84 is used for the ground site.
 MU_EARTH = 3.986004418e14  # m^3/s^2 (WGS-84)
 OMEGA_EARTH = 7.292115146706979e-5  # rad/s, Earth rotation rate used with GMST82 (Vallado)
 

@@ -6,8 +6,8 @@ The [locate](locate.md) study finds a COSPAS-SARSAT distress beacon from one bur
 satellites (MEOSAR, as a MEOLUT does), or from the Doppler curve over one LEO pass. Their measurement
 noise comes from the 406 MHz link, built here from the COSPAS-SARSAT documents: C/S T.001 Issue 4
 Rev.7 (first-generation beacons, FGB), T.018 Issue 1 Rev.7 (second-generation, SGB), T.016 Issue 1 Rev.5
-(MEOSAR payloads) and T.019 Issue 2 Rev.5 (MEOLUT specification). These are the March 2021 issues;
-newer revisions exist (T.018 is at least at Rev.13), and they may settle T.019's bracketed SGB values.
+(MEOSAR payloads) and T.019 Issue 2 Rev.5 (MEOLUT specification). These are the March 2021 issues.
+Newer revisions exist (T.018 is at least at Rev.13), and they may settle T.019's bracketed SGB values.
 
 Chain: beacon at Sophia Antipolis → Galileo FOC repeater → MEOLUT at Toulouse. Satellites count only when
 both ends see them at ≥ 5° (T.019 Annex F). The repeater is a bent pipe, so
@@ -19,9 +19,9 @@ both ends see them at ≥ 5° (T.019 Annex F). The repeater is a bent pipe, so
 - **Downlink**: at least 17.8 dBW of FOC EIRP at 1544.1 MHz, of which one beacon gets a share 10 dB lower
   (T.019: 8 signals plus noise). Fading is 2.5 dB and local losses 1 dB.
   - The MEOLUT G/T is design dependent (T.019 §A.5). 4 dB/K is an assumption. The same value appears in a
-    published SGB link study, seen only through a search summary.
+    published SGB link study (not checked against the paper).
 - **Intermodulation**: C/I3 = 28 dBc (T.016), spread over the 90 kHz passband against one beacon's share,
-  giving 67.5 dB-Hz. That is negligible either way.
+  giving 67.5 dB-Hz. Negligible.
 - **Beacons**:
   - FGB at T.019's nominal 7 dBW with a 2 dBi antenna;
   - FGB worst compliant: 35 dBm with a −3 dBi antenna (T.001 limits);
@@ -49,7 +49,7 @@ reference beacons.
 
 One more term needs calibration: the group delay also slopes with frequency (2.5 µs per 4 kHz on FOC).
 Across the SGB's ±1.2 kHz carrier tolerance that is up to ±0.75 µs. It is fixed for a given satellite and
-frequency (characterised per C/S R.018), so it is assumed calibrated; left uncalibrated, it would be
+frequency (characterised per C/S R.018), so it is assumed calibrated. Left uncalibrated, it would be
 comparable to the 1 µs requirement.
 
 - **The uplink sets the system C/N0.** The downlink gives each beacon 51.6–53.4 dB-Hz at 4 dB/K. These
@@ -60,7 +60,7 @@ comparable to the 1 µs requirement.
   geometry. The worst-compliant FGB at 5° lands at 36.0 dB-Hz, inside the 34.8–37.8 dB-Hz band where
   T.019 specifies the accuracy, so that band is the low-margin case.
 - **The SGB is about 45 times better in TOA** at equal C/N0, because its information is in the chip edges
-  (38,400 chips/s; rms bandwidth 17.8 kHz after the 90 kHz passband). An FGB has only the ±1.1 rad
+  (38,400 chips/s, rms bandwidth 17.8 kHz after the 90 kHz passband). An FGB has only the ±1.1 rad
   biphase transitions at 400 bps with 150–250 µs edges (rms bandwidth 0.4–0.55 kHz). The waveforms
   follow T.001 and T.018:
   - FGB: 160 ms of carrier, then a 144-bit long message starting with the 15-bit sync and frame sync

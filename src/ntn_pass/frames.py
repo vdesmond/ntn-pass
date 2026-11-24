@@ -2,7 +2,7 @@
 
 TEME -> PEF uses GMST (IAU-82), the convention SGP4 output assumes. UT1 is taken equal to UTC
 by default (pass ``dut1_s`` = UT1 - UTC otherwise) and polar motion is neglected (PEF ~ ITRF).
-UT1 - UTC stays within 0.9 s; 0.1 s of it rotates a LEO satellite ~50 m in the Earth-fixed frame.
+UT1 - UTC stays within 0.9 s, and 0.1 s of it rotates a LEO satellite ~50 m in the Earth-fixed frame.
 """
 
 import numpy as np

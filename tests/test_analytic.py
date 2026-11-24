@@ -1,6 +1,6 @@
 """Closed-form circular-orbit model vs the 3GPP NTN reference tables.
 
-Sources (values typed from the documents, not from memory):
+Sources:
 - TR 38.821 V16.2.0, Table 4.2-2 "Reference scenario parameters" (min elevation 10 deg).
 - TR 38.811 V15.4.0, Table 5.3.4.3.2-7 "Summary of Doppler shift and shift variation for different
   altitudes" (2 GHz column).

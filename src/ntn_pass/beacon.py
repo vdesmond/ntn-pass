@@ -1,4 +1,4 @@
-"""406 MHz distress beacons: what they transmit, how often, and how stable their carrier is.
+"""406 MHz distress beacons: waveforms, burst schedules and carrier stability.
 
 Sources (all March 2021 issues, the ones available):
 - C/S T.001 Issue 4 Rev.7, first-generation beacons (FGB): 35-39 dBm into 50 ohm (2.3.2), antenna gain

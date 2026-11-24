@@ -85,7 +85,7 @@ def test_harq_tr_anchor():
 
 
 def test_rp_choice_keeps_the_ue_gnb_rtt():
-    """TS 38.321: UE-gNB RTT = TA + kmac. RP at the gNB puts the feeder round trip in the TA; RP at the
+    """TS 38.321: UE-gNB RTT = TA + kmac. RP at the gNB puts the feeder round trip in the TA, while RP at the
     satellite puts it in kmac (whole 1 ms slots), so the RTT is the same up to that rounding."""
     service, feeder = 9.3e-3, 7.6e-3
     rtt_gnb = service + feeder + 0 * 1e-3

@@ -12,7 +12,7 @@ Two searches:
 - cold: no ephemeris yet (SIB19 comes after the SSB). +-(24 ppm + 0.05 ppm) in 5 kHz steps, 20 ms of
   timing (one SSB period), 3 N_ID2. 24 ppm is the TR 38.811 LEO-600 maximum.
 - warm: valid ephemeris and GNSS position (connected mode, or idle with a stored SIB19). The UE
-  pre-compensates the Doppler and the delay; what is left is the two-body ephemeris error (``timing``:
+  pre-compensates the Doppler and the delay. What is left is the two-body ephemeris error (``timing``:
   below 12 Hz at 120 s) plus the 0.05 ppm SAN error, so one frequency hypothesis and +-1 symbol of timing.
 """
 
@@ -102,7 +102,7 @@ def pd_curves(snrs, trials, rng):
 
 
 def accuracy(snrs, trials, rng):
-    """Cold acquisition (1 burst) then fine estimation; errors over the detected trials (NaN when fewer
+    """Cold acquisition (1 burst) then fine estimation. Errors over the detected trials (NaN when fewer
     than MIN_DETECTIONS were detected: the RMSE would rest on a handful of samples)."""
     thr = thresholds()["cold, 1 burst"]
     freqs = SEARCHES["cold"]["freqs"]

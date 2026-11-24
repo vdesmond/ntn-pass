@@ -25,7 +25,7 @@ def test_consistency_false_alarm_rate(mode, rng):
 
 @pytest.mark.parametrize("mode", MODES)
 def test_noncentrality_predicts_mean_statistic(mode, rng):
-    """With a false report, E[T] = dof + lambda; compare the Monte Carlo mean against it."""
+    """With a false report, E[T] = dof + lambda. Compare the Monte Carlo mean against it."""
     m = CASES[mode][0]
     truth = truth_of(mode)
     reported = np.array([0.4, -0.3])  # km

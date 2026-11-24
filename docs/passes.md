@@ -33,7 +33,7 @@ Doppler = −f<sub>c</sub>·ṙ/c, positive while the satellite approaches.
 
 The handover rate depends entirely on the selection policy, so the policy is always reported with the
 number. "Highest satellite always" on Starlink switches every few tens of seconds. That is a bound,
-not a policy anyone would run; the median dwell (20 s) is at the 10 s grid resolution.
+not a policy anyone would run. The median dwell (20 s) is at the 10 s grid resolution.
 Delay drift in µs/s equals Doppler in ppm (both are ṙ/c).
 
 ![passes](../figures/passes-tracks.png)
@@ -44,7 +44,7 @@ Delay drift in µs/s equals Doppler in ppm (both are ṙ/c).
 
 - **TR 38.821 V16.2.0 Table 4.2-2** (10° minimum elevation, spherical Earth 6,371 km): the max slant
   range (40,581 / 1,932 / 3,131 km) and every max RTT (541.46, 270.73, 25.77, 41.77, 12.89, 20.89 ms)
-  reproduce to the TR's printed precision. Service-link-only values correspond to Scenario B/D; adding
+  reproduce to the TR's printed precision. Service-link-only values correspond to Scenario B/D. Adding
   an equal feeder link gives Scenario A/C.
 - **Max Doppler**: the closed form (TR 38.811 §5.3.4.4, UE in the orbital plane, no Earth rotation)
   gives 23.05 / 20.37 / 19.21 ppm at 600 / 1,200 / 1,500 km. The tabulated 24 / 21 / 20 ppm appear to be
@@ -55,7 +55,7 @@ Delay drift in µs/s equals Doppler in ppm (both are ṙ/c).
   600 km (TR 544 Hz/s = 0.272 ppm/s, model 581 Hz/s = 0.291 ppm/s) or at 1,200 km in TR 38.821
   (TR 0.13 ppm/s, model 0.123). The two misses go in opposite directions, so it is not a constant or
   a convention. These three misses are kept as strict `xfail` tests, so a later fix shows up.
-- **Independent cross-check against Skyfield** (same SGP4 core; independent time scales, frames and
+- **Independent cross-check against Skyfield** (same SGP4 core, but independent time scales, frames and
   topocentric code): on the highest and lowest pass of each constellation, agreement is within 0.05 m
   in range, 10⁻⁵° in elevation/azimuth and 1 mm/s in range rate. That holds once Skyfield's
   UT1 − UTC (0.09 s) is passed in. Without it, the expected difference is ~50 m per 0.1 s at LEO, too

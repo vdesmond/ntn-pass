@@ -2,10 +2,9 @@
 
 The test statistic is the whitened residual energy with the position held at the claim and the nuisance
 parameters fitted: chi-square with len(meas) - nuisance degrees of freedom when the claim is true, and
-noncentral chi-square when it is not. That gives the false-alarm threshold, the probability of catching a
-false claim, the smallest false offset caught with a given probability, and whether the mirror image of the
-true position across the satellite ground track can be told apart (the one ambiguity a single satellite
-leaves).
+noncentral chi-square when it is not. From that: the false-alarm threshold, the detection probability, the
+smallest detectable false offset, and whether the mirror image of the true position across the satellite
+ground track can be rejected (a single satellite can't otherwise tell the two apart).
 """
 
 import numpy as np
@@ -42,7 +41,7 @@ def threshold(meas: L.Measurements, pfa):
 def noncentrality(meas: L.Measurements, geo: L.Geo, ne_true, ne_reported):
     """Non-centrality of the statistic when the transmitter is at ne_true but ne_reported is claimed.
 
-    Linearised around the reported point for the nuisance projection; the position mismatch itself
+    Linearised around the reported point for the nuisance projection. The position mismatch itself
     enters through the exact model difference.
     """
     th_rep = np.concatenate([ne_reported, np.zeros(meas.nuisance)])

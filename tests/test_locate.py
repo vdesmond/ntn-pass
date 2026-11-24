@@ -36,7 +36,7 @@ def test_jacobian_matches_finite_differences(mode):
 @pytest.mark.parametrize("mode", MODES)
 def test_estimator_reaches_crb(mode, rng):
     """Normalised estimation error squared over N trials is chi-square(k N) when the estimator is
-    efficient; assert it lies inside the two-sided 99.9 % interval."""
+    efficient. Assert it lies inside the two-sided 99.9 % interval."""
     m = CASES[mode][0]
     truth = truth_of(mode)
     P = L.crb(m, GEO, truth)
@@ -53,7 +53,7 @@ def test_estimator_reaches_crb(mode, rng):
 
 
 def test_single_pass_mirror_minimum():
-    """One satellite: a second minimum exists across the ground track; the true side has lower cost."""
+    """One satellite: a second minimum exists across the ground track, and the true side has lower cost."""
     leo = orbit.leo_pass_states(45.0)
     m = L.leosar(leo.r, leo.v, 5.0, FC_SAR)
     s = L.simulate(m, GEO, truth_of("leosar"))

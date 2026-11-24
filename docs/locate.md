@@ -20,19 +20,19 @@ several instants plus the UE's downlink timing drift due to Doppler. TR 38.882 V
 verified within 5–10 km (macro-cell size, enough to tell countries apart).
 
 Setup: Starlink passes over Sophia Antipolis, one RTT and one Doppler measurement every 10 s (an
-assumption; Rel-18 leaves the schedule to the location server), consistency test at Pfa 1 %.
+assumption, Rel-18 leaves the schedule to the location server), consistency test at Pfa 1 %.
 - **RTT noise from TS 38.133**: V19.0.0 Table 10.1.25C.2-1 gives the FR1-NTN UE Rx-Tx accuracy as
   ±(59 + δ) Tc at 0 dB, 15 kHz and ≥ 52 PRB, with δ = 80 Tc (Table 10.1.25C.2-2). That is ±71 ns.
   - It is read as a 90 % two-sided bound (an assumption: the table gives a ± limit, not a σ).
   - The network leg (gNB Rx-Tx) has no NTN requirement in the sources and is taken equal.
   - Result: σ_RTT = 61 ns, or 9 m of range.
   - A second case uses the SSB alone ([acquisition](acquisition.md)'s TOA bound on both legs). It is optimistic for two reasons:
-    it is a bound with no implementation margin, while TS 38.133 is a requirement; and it gives the uplink
+    it is a bound with no implementation margin, while TS 38.133 is a requirement, and it gives the uplink
     leg the downlink SSB's accuracy, while the uplink runs over 360 kHz at lower CNR ([link](link.md)). PRS/SRS
     over 52+ PRBs is wider than the SSB, so bandwidth is not the reason.
 - **Doppler noise from [acquisition](acquisition.md)**: the per-SSB FOA bound at each instant's Set-1 SNR,
   which is inside the region where the estimator reaches it. The satellite's 0.05 ppm frequency error is estimated as a
-  carrier offset; it would otherwise bias the result by 15 m/s.
+  carrier offset. It would otherwise bias the result by 15 m/s.
 
 | Pass max elevation | 10 s window | 60 s | 240 s |
 | --- | --- | --- | --- |
@@ -50,7 +50,7 @@ false-alarm rate for truthful UEs.
   kilometre off in every direction, far inside TR 38.882's 5–10 km. The detection region is an
   ellipse elongated across the satellite's track, and it shrinks as the window grows.
 - **The weakness is the mirror image across the ground track.** One satellite's delay and Doppler are
-  nearly symmetric about its ground track; only Earth rotation and track curvature break the symmetry.
+  nearly symmetric about its ground track. Only Earth rotation and track curvature break the symmetry.
   - The figure's right panel searches for the near-mirror point that best explains the true
     measurements, and gives the probability that a claim there is rejected.
   - With a 10 s window that probability is under 10 % on every pass. A UE could claim a location
@@ -63,7 +63,7 @@ false-alarm rate for truthful UEs.
     move.
 - **Threat model.** The UE reports its own Rx-Tx and downlink Doppler, so a UE that knows its true position
   can falsify them. The test catches a wrong or spoofed GNSS fix and naive false claims, not a fully
-  adversarial UE; only gNB-measured quantities resist that.
+  adversarial UE. Only gNB-measured quantities resist that.
 
 ![Rel-18 verification](../figures/locate-rel18.png)
 
@@ -71,7 +71,7 @@ false-alarm rate for truthful UEs.
 
 Beacon at Sophia, MEOLUT at Toulouse, satellites at ≥ 5° from both (T.019 Annex F). At most four
 satellites are used, as for a MEOLUT with four antennas, chosen for the smallest position CRB (T.019's
-minimum-JDOP rule). The 406 MHz noise comes from [beacon](beacon.md) in its two cases (T.019-compliant σ;
+minimum-JDOP rule). The 406 MHz noise comes from [beacon](beacon.md) in its two cases (T.019-compliant σ and
 link-limited σ per satellite). Evaluated every 30 min over 24 h against the T.019 §5.6 requirements for
 nearly-static beacons.
 

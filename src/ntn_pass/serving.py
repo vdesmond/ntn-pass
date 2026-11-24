@@ -1,8 +1,8 @@
 """Serving-satellite timeline and handover counts.
 
-The handover rate depends entirely on the selection policy, so the policy is explicit:
+Handover rate depends on how the serving satellite is picked. Two policies:
 
-- ``max-elevation``: serve the highest satellite; switch when another one is higher than the current
+- ``max-elevation``: serve the highest satellite, and switch when another one is higher than the current
   one by more than ``hysteresis_deg`` (0 = always the highest).
 - ``until-mask``: keep the current satellite until it drops below the mask, then take the highest.
 """

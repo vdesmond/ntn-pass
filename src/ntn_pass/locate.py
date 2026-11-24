@@ -1,9 +1,9 @@
 """Locating a ground transmitter from delay and Doppler measured at moving satellites.
 
-Three measurement sets, one model:
+Three measurement sets share the same model:
 
 - ``rel18``:   NR NTN network verification (TS 38.305 V18.8.0 4.3.11): round-trip time and Doppler from a
-               single satellite at several instants. The satellite's own carrier error is the one nuisance.
+               single satellite at several instants. The only nuisance is the satellite's carrier error.
 - ``leosar``:  Doppler curve from one satellite pass (LEOSAR / Argos). The transmitter carrier is unknown,
                and optionally its linear drift.
 - ``meosar``:  one burst received by several satellites (MEOSAR / MEOLUT): time and frequency of arrival,
@@ -15,7 +15,7 @@ in km from a reference point. Unknowns are scaled (km, us, Hz) and residuals whi
 so the solver works on a well-conditioned problem.
 
 Approximations shared by the simulator and the estimator: no light time (the satellite state is taken
-at the reception instant; ~300 m of satellite motion at MEO), straight-line propagation in the Earth-fixed
+at the reception instant, ~300 m of satellite motion at MEO), straight-line propagation in the Earth-fixed
 frame (Sagnac effect, tens of metres), vacuum propagation, and no bent-pipe relay to a ground station.
 
 Whether a claimed position is consistent with the measurements is in ``integrity``.
@@ -39,7 +39,7 @@ class Measurements:
     """Satellite states and what is measured from each, one row per observation.
 
     kind: "rtt" (2 rho / c, s), "toa" (t_e + rho / c, s) or "doppler" (-fc rho_dot / c + df + df' t, Hz).
-    t is each row's time from a reference instant (s); it only matters for the carrier drift df'.
+    t is each row's time from a reference instant (s), which only matters for the carrier drift df'.
     """
 
     kind: np.ndarray  # (m,) str

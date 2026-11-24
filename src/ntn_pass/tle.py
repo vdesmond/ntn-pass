@@ -27,7 +27,7 @@ class Constellation:
 
 
 CONSTELLATIONS = {
-    # Starlink: most of the fleet sits at ~466 km mean altitude (some at 530-570 km); 340-370 km is
+    # Starlink: most of the fleet sits at ~466 km mean altitude (some at 530-570 km). 340-370 km is
     # orbit raising / very-low shells and below 300 km is deorbiting (2026-10-13 snapshot).
     "starlink": Constellation("Starlink", "starlink", (440.0, 600.0), 0.005, 3.0),
     "oneweb": Constellation("OneWeb", "oneweb", (1100.0, 1300.0), 0.005, 3.0),

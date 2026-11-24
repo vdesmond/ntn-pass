@@ -26,7 +26,7 @@ SURVEY = {"starlink": (6.0, 10.0), "oneweb": (24.0, 20.0), "galileo": (24.0, 60.
 
 
 def propagate(sats, jd, fr, dut1_s=0.0):
-    """ECEF position (m) and velocity (m/s), shape (n_sat, n_t, 3); err (n_sat, n_t) != 0 marks SGP4 failures."""
+    """ECEF position (m) and velocity (m/s), shape (n_sat, n_t, 3). Nonzero err (n_sat, n_t) marks SGP4 failures."""
     arr = sats if isinstance(sats, SatrecArray) else SatrecArray(list(sats))
     err, r, v = arr.sgp4(np.asarray(jd), np.asarray(fr))
     r_ecef, v_ecef = teme_to_ecef(r * 1e3, v * 1e3, jd + fr, dut1_s)
@@ -52,7 +52,7 @@ def ecef_acceleration(r, v):
 
 @dataclass
 class Look:
-    """Per-sample geometry; arrays share the (n_sat, n_t) shape of the inputs."""
+    """Per-sample geometry. Arrays share the (n_sat, n_t) shape of the inputs."""
 
     az_deg: np.ndarray
     el_deg: np.ndarray
